@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Proyecto Info</title>
+    </head>
+
+<body>
+    <p>Lista de preguntas</p>
+    {% for item in preguntas %}
+        <p>{{ item.pregunta }}</p>
+        <br>
+    {% endfor %}
+</body>
+</html>
