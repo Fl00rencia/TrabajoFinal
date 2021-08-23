@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <style>
-    *{
+*{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 200;
     
@@ -34,6 +30,19 @@ body{
 }
 
 .form{
+    /*display: inline-block;
+    filter:opacity(transparent);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 125px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border-style:groove;
+    border-color: steelblue;
+    text-align: center;
+    filter: drop-shadow(10px 10px 10px black);*/
     display: inline-block;
     margin: 20px 450px;
     padding: 10px 125px;
@@ -139,52 +148,3 @@ body{
         padding: 100px 100px;
     }
 }
-
-  </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login5</title>
-    <meta name="author" content="Grupo 11">
-    <link rel="stylesheet" type="text/css" href="test.css">
-    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-</head>
-<body>
-    <div class="flex-container">
-        <form class="form">
-            
-            <div class="imagen_container">
-                <img class="img" src="/templates/usuario/icono2.png" alt="">
-            </div>
-
-            <div class="texto">
-                <h1>Inicia sesión</h1>
-            </div>
-
-            <div class="form__section">
-                 <input  type="username" style="background-color: transparent; text-align: center;" placeholder="Nombre de usuario" class="form__input"; text-aligne= center;>
-            </div>
-            
-            <div class="form__section">
-                 <input type="password" style="background-color: transparent;text-align: center;" placeholder="Contraseña" class="form__input">
-            </div>
-            
-            <div class="content centered-elements">
-                <div>
-                  <button class="boton btn--1">
-                    Iniciar sesión
-                  </button>
-            </div>
-            <div class="enlace">
-                <p class="parrafo">¿Todavia no tienes una cuenta?</p>
-                <a class="link" href="poner link">Crear usuario</a>
-            </div>
-        </form>
-    </div>
-    {% if form.errors %}
-    <p>Su nombre de usuario y contraseña no coinciden. Por favor revise los datos ingresados e intente nuevamente.</p>
-    {% endif %}
-</body>
-</html>
