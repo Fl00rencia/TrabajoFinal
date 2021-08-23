@@ -1,21 +1,55 @@
-<html>
-    <head>
-        <title>Proyecto Info</title>
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="csslogin.css">
+ 
+    
+</head>
 <body>
-    {% if request.user.username %}
-        <p>
-            Bienvenido <b>{{request.user.username}}</b>
-        </p>
+     <header>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Inicio</a>
+          <a href="#login">Ingresar</a>
+          <a href="#reglas">Reglas</a>
+          <a href="#about">Nosotros</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+    </header>
 
-        <a href="/logout">Cerrar sesión</a>
-    {% else %}
+    <div class="flex-container">
+        <form class="form">
+            <div class="aJugar">
+                <img class="ajugar" src="imagenes/ajugar.png" alt="">
+            </div>
+            <div class="imagen_container">
+                <img class="img" src="imagenes/logo.gif" alt="">
+            </div>
 
-        <a href="/login">Iniciar sesión</a>
-    {% endif %}
-    <hr />
+        </form>
+    </div>
+    <div class="footer">
+        <div>
+           <img class="foot" src="imagenes/banner.png" alt=""> 
+        </div>
+        <div
+    </div>
+    
 </body>
-
 </html>
-
